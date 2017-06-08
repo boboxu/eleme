@@ -3,20 +3,22 @@ var router = express.Router();
 var database = require('../database/db');
 var app = express();
 
-router.get('/placeorder', function (req, res) {
-    var menuid = req.query.menuid;
+router.post('/placeorder', function (req, res) {
+    console.log('下单'+req.body.menuid);
+    var menuid = req.body.menuid;
     var userinfo = req.cookies["userinfo"];
     console.log("placeorder"+menuid+"userinfo"+userinfo);
     //下单
     database.placeOrder(userinfo._id,menuid,function(result){
         if(result){
-            app.render('');
+            res.render('orderlist');
+            res.end();
         }
         else {
-            console.log('下单失败');
+            res.send('下单失败');
         }
     });
 });
 
-roouter.get('/placeorder')
+//router.get('/placeorder')
 module.exports = router;
