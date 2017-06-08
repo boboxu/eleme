@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<title>菜单</title>
+<head><script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+<script>var jsonarray = JSON.parse('!{menudata}').menudata;for (i =0;i<jsonarray.length;i++)
+{var item = jsonarray[i];var startdate = new Date(item.startdate*1000);var enddate = new Date(item.enddate*1000);document.write("<p><a href=/orders/placeorder?menuid="+item._id+">"+item.name+ "<br />有效期:" + startdate.toLocaleDateString() + ' -- ' + enddate.toLocaleDateString() + "<br />价格:" +  item.price +"</a></p><br />" )
+}</script>
+
+<p><a href="/users/logout">登出</a></p>
+<p><a href="/menus/loadmenu">上菜</a></p>
+</body>
+</html>
+
+

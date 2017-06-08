@@ -1,0 +1,29 @@
+2017-02-28T19:25:37.337+0800 I CONTROL  [initandlisten] MongoDB starting : pid=28385 port=27017 dbpath=/Users/rolandxu/Documents/afterworkdev/nodejs/mongodb 64-bit host=rolandxu.local
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] db version v3.2.9
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] git version: 22ec9e93b40c85fc7cae7d56e7d6a02fd811088c
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2j  26 Sep 2016
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] allocator: system
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] modules: none
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] build environment:
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] options: { config: "/usr/local/etc/mongod.conf", net: { bindIp: "127.0.0.1" }, storage: { dbPath: "/Users/rolandxu/Documents/afterworkdev/nodejs/mongodb" }, systemLog: { destination: "file", logAppend: true, path: "/Users/rolandxu/Documents/afterworkdev/nodejs/mongodb/mongo.log" } }
+2017-02-28T19:25:37.338+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+2017-02-28T19:25:37.338+0800 E NETWORK  [initandlisten]   addr already in use
+2017-02-28T19:25:37.338+0800 E STORAGE  [initandlisten] Failed to set up sockets during startup.
+2017-02-28T19:25:37.338+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
+2017-02-28T19:26:08.624+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] MongoDB starting : pid=28400 port=27017 dbpath=/Users/rolandxu/Documents/afterworkdev/nodejs/mongodb 64-bit host=rolandxu.local
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] db version v3.2.9
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] git version: 22ec9e93b40c85fc7cae7d56e7d6a02fd811088c
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2j  26 Sep 2016
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] allocator: system
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] modules: none
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] build environment:
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] options: { config: "/usr/local/etc/mongod.conf", net: { bindIp: "127.0.0.1" }, storage: { dbPath: "/Users/rolandxu/Documents/afterworkdev/nodejs/mongodb" }, systemLog: { destination: "file", logAppend: true, path: "/Users/rolandxu/Documents/afterworkdev/nodejs/mongodb/mongo.log" } }
+2017-02-28T19:26:08.642+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+2017-02-28T19:26:08.642+0800 E NETWORK  [initandlisten]   addr already in use
+2017-02-28T19:26:08.642+0800 E STORAGE  [initandlisten] Failed to set up sockets during startup.
+2017-02-28T19:26:08.642+0800 I CONTROL  [initandlisten] dbexit:  rc: 48
