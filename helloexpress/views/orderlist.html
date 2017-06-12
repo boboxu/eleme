@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head><title>我的订单</title><link rel='stylesheet' href='/stylesheets/style.css'/>
+<title>订单状态</title>
+<head>
 </head>
 <body>
-<h1>这是你的订单哈</h1>
+<script>var jsonarray = JSON.parse('!{orderdata}');for (i =0;i<jsonarray.length;i++)
+{var item = jsonarray[i];var orderdate = new Date(item.ordertime);document.write("<form name='form"+item._id+"' action='/orders/cancelorder' method='post'><a href=javascript:document.form"+item._id+".submit();><input type='hidden' id='orderid' name='orderid' value='"+item._id+"'/>"+item.menuinfo.name+"<br/>"+orderdate.toLocaleDateString()+"</a></form><br />" )
+}</script>
 
 </body>
 </html>
+
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<title>我的订单</title>
+<head>
+</head>
+<body>
+<h1>下单成功</h1>
+<script>var orderdata = JSON.parse('!{orderdata}');var menudata = JSON.parse('!{menudata}');document.write("下单时间："+new Date(orderdata.ordertime).toLocaleDateString() +"<br />" + menudata.name+ "<br />有效期:" + new Date(menudata.startdate).toLocaleDateString() + " -- " + new Date(menudata.enddate).toLocaleDateString() + "<br />价格:" +  menudata.price +"</a></form><br />" )
+</script>
+
+<p><a href="/users/logout">帮人下单</a></p>
+<p><a href="/orders/orderlist">历史订单</a></p>
+</body>
+</html>
+
+
